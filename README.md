@@ -16,6 +16,7 @@ When joining a Zoom meeting, the "join from your browser" link is intentionally 
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/zoom-redirector/
 - Edge: https://microsoftedge.microsoft.com/addons/detail/dkhjempaiackknhjkkaidppoepkdamen
 - Opera: submission pending
+- Bookmarklet: Drag <a href='javascript:"use strict";{const o=new URL(window.location),t=/^\/[js]\/(\d+)\/?$/.exec(o.pathname);if(void 0===t||void 0===t[1]);else{const e=t[0][1],n={j:"/join",s:"/start"};o.protocol="https:",o.pathname="/wc/"+encodeURIComponent(t[1])+n[e],window.location.href=o.href}}'>Zoom Redirector</a> to your bookmarks bar.
 
 ### Changelog
 
