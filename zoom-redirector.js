@@ -9,7 +9,7 @@
     if (match === undefined || match[1] === undefined) {}
     else {
         const ending = match[0][1];
-        const mapping = {'j': '/join', 's': '/start'};
+        const mapping = {j: "/join", s: "/start"};
 
         pageUrl.protocol = "https:";
         pageUrl.pathname = "/wc/" + encodeURIComponent(match[1]) + mapping[ending];
